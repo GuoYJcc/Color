@@ -13,6 +13,16 @@
             <p>探索中国传统文化的色彩之美</p>
         </header>
         
+        <nav class="category-nav">
+            <button class="category-btn active" data-category="all">全部</button>
+            <button class="category-btn" data-category="red">红色系</button>
+            <button class="category-btn" data-category="blue">蓝色系</button>
+            <button class="category-btn" data-category="green">绿色系</button>
+            <button class="category-btn" data-category="yellow">黄色系</button>
+            <button class="category-btn" data-category="purple">紫色系</button>
+            <button class="category-btn" data-category="neutral">中性色</button>
+        </nav>
+        
         <div class="colors-grid" id="colorsGrid">
             <!-- 颜色卡片将通过JavaScript动态生成 -->
         </div>
@@ -20,7 +30,19 @@
         <div class="color-detail" id="colorDetail">
             <div class="detail-content">
                 <h2 id="colorName"></h2>
-                <div class="color-preview" id="colorPreview"></div>
+                <div class="color-info">
+                    <div class="color-preview" id="colorPreview"></div>
+                    <div class="color-values">
+                        <div class="color-value-item">
+                            <span class="value-label">HEX</span>
+                            <span class="value-content" id="hexValue"></span>
+                        </div>
+                        <div class="color-value-item">
+                            <span class="value-label">RGB</span>
+                            <span class="value-content" id="rgbValue"></span>
+                        </div>
+                    </div>
+                </div>
                 <p id="colorStory"></p>
                 <button id="closeDetail">关闭</button>
             </div>
